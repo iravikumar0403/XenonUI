@@ -1,0 +1,10 @@
+@import url('./common/reset.css');
+@import url('./common/colors.css');
+@import url('./common/utils.css');
+@import url('./common/typography.css');
+@import url('./docs.css');
+@import url('./components/navbar.css');
+
+html{
+    scroll-behavior: smooth;
+}
