@@ -3,6 +3,7 @@
 @import url('./common/utility.css');
 @import url('./common/typography.css');
 @import url('./components/navbar.css');
+@import url('./components/avatar.css');
 
 html{
     scroll-behavior: smooth;
