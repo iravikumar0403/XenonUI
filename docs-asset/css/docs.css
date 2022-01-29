@@ -6,7 +6,9 @@
 
 .sidebar{
     box-shadow: 0px 2px 4px var(--divider-color);
-    min-height: calc(100vh - 4rem);
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-title{
@@ -53,10 +55,17 @@
     background-color: var(--bg-secondary);
 }
 
-code{
+.code-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    overflow: auto;
+}
+
+pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 main{
@@ -66,3 +75,13 @@ main{
 .doc-classname{
     color: var(--primary-color)
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+
+    .page-layout{
+        grid-template-columns: 1fr;
+    }
+  }
