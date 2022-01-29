@@ -1,9 +1,18 @@
 @import url('./common/reset.css');
 @import url('./common/colors.css');
-@import url('./common/utils.css');
+@import url('./common/utility.css');
 @import url('./common/typography.css');
 @import url('./components/navbar.css');
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+    color : var(--complementary-text);
+}
+
+p{
+    color: var(--primary-text);
 }
