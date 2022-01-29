@@ -34,6 +34,10 @@ nav{
     justify-content: center;
 }
 
+.nav-menu-resp{
+    display: none;
+}
+
 .nav-menu-item{
     list-style-type: none;
     padding: 0;

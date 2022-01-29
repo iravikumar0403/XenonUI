@@ -19,3 +19,10 @@ function setActivePage(currentHash){
     const currentActive = document.querySelector(`a[href="#${currentHash}"]`)
     currentActive.parentElement.classList.add('active')
 }
+
+const menuBtn = document.querySelector(".nav-menu-resp")
+menuBtn.addEventListener('click', ()=>{
+    const sideNav = document.querySelector(".sidebar");
+    sideNav.classList.toggle("show");
+    menuBtn.children[0].classList.toggle("fa-times")
+})
