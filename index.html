@@ -41,9 +41,9 @@
         </aside>
         <main>
             <div id="avatar">
-                <h1>Avatar</h1>
+                <h2>Avatar</h2>
                 <p>The Avatar component is used to represent user, and displays the profile picture, initials or icon.</p>
-                <h2>Image Avatar</h2>
+                <h3>Image Avatar</h3>
                 <p>The <span class="doc-classname">.avatar</span> class gives you the default avatar component.</p>
                 <div class="comps-container">
                     <img class="avatar avatar-xl" src="https://picsum.photos/200" alt="avatar-img" />
@@ -60,7 +60,7 @@
                     </iframe>
                 </code>
 
-                <h2>Text Avatar</h2>
+                <h3>Text Avatar</h3>
                 <p>Use <span class="doc-classname">.avatar</span> with a div tag with text for a text avatar.</p>
                 <div class="comps-container">
                     <div class="avatar avatar-xl">AB</div>
@@ -78,7 +78,7 @@
                     </iframe>
                 </code>
 
-                <h2>Square Avatar</h2>
+                <h3>Square Avatar</h3>
                 <p>Use <span class="doc-classname">.avatar-sq</span> modifier class to get a sqaure avatar.</p>
                 <div class="comps-container">
                     <div class="avatar avatar-sq">AB</div>
@@ -90,6 +90,59 @@
                         src="https://carbon.now.sh/embed?bg=rgba%28252%2C252%2C252%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sq%2522%253EAB%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sq%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%2522%2520alt%253D%2522avatar-img%2522%252F%253E%2509%2509%250A"
                         style="width: 814px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+            </div>
+
+            <!-- Badge Component starts -->
+
+            <div id="badge">
+                <h2>Badge</h2>
+                <p>Badges are being used to display a notification count or status information. Color badge can be used to show the status of user. The number badge can be used to show the cart or notification count.</p>
+                <h3>Profile Badge</h3>
+                <div class="comps-container">
+                    <div class="badge-container">
+                        <img class="avatar" src="https://picsum.photos/200" alt="avatar-img" />
+                        <div class="badge bottom right bg-red"></div>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar" src="https://picsum.photos/200" alt="avatar-img" />
+                        <div class="badge bottom right bg-green"></div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bottom right bg-yellow"></div>
+                    </div>
+                </div>
+
+                <code>
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28252%2C252%2C252%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=750.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%2522%2520alt%253D%2522avatar-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520right%2520bg-red%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%2522%2520alt%253D%2522avatar-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520right%2520bg-green%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2522%253EAB%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520right%2520bg-yellow%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                    style="width: 750px; height: 350px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </code>
+
+                <h3>Number Badge</h3>
+                <div class="comps-container">
+                    <div class="badge-container">
+                        <img class="avatar" src="./assets/cart.svg" alt="avatar-img" />
+                        <div class="badge bg-red top right">9+</div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bg-green bottom left">55</div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bg-yellow bottom right">55</div>
+                    </div>
+                </div>
+                <code>
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28252%2C252%2C252%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=668.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522.%252Fassets%252Fcart.svg%2522%2520alt%253D%2522avatar-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-red%2520top%2520right%2522%253E9%252B%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2522%253EAB%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-green%2520bottom%2520left%2522%253E55%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2522%253EAB%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-yellow%2520bottom%2520right%2522%253E55%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+                    style="width: 669px; height: 350px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </code>
             </div>

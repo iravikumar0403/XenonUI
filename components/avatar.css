@@ -2,11 +2,13 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 1px solid var(--divider-color);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5em;
+}
+
+.avatar:not(img){
     background-color: var(--primary-light);
 }
 

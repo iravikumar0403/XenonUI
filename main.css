@@ -4,6 +4,7 @@
 @import url('./common/typography.css');
 @import url('./components/navbar.css');
 @import url('./components/avatar.css');
+@import url('./components/badge.css');
 
 html{
     scroll-behavior: smooth;
