@@ -1,4 +1,5 @@
 :root{
+
     --primary-color : #03A9F4;
     --primary-dark : #0288D1;
     --primary-light : #B3E5FC;
@@ -10,9 +11,9 @@
     --bg-color: #fcfcfc;
     --bg-secondary : #ffffff;
 
-    --red : #f87171;
-    --green : #34d399;
-    --yellow : #facc15;
+    --danger-color : #f87171;
+    --success-color : #34d399;
+    --warn-color : #facc15;
 
     /* --primary-color : #03A9F4;
     --primary-dark : #B3E5FC;
