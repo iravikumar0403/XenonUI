@@ -1,0 +1,83 @@
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:disabled{
+    opacity: 0.7;
+    cursor: default;
+}
+
+.btn.outlined:disabled{
+    background-color: transparent;
+}
+
+.btn.primary{
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.btn.success{
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.btn.danger{
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btn.warn{
+    background-color: var(--warn-color);
+    border-color: var(--warn-color);
+    color: var(--warn-color);
+}
+
+.btn.fab{
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.btn.fab.bottom-right{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.btn.fab.bottom-left{
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.btn.outlined:not(:hover){
+    background-color: transparent;
+}
+
+.btn.icon-only{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.icon-only:hover{
+    background-color: var(--bg-color);
+}
+
+.btn:not(.icon-only){
+    color: inherit;
+}
