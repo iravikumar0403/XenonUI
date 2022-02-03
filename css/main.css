@@ -5,6 +5,8 @@
 @import url('./navbar.css');
 @import url('./avatar.css');
 @import url('./badge.css');
+@import url('./alert.css');
+@import url('./button.css');
 
 html{
     scroll-behavior: smooth;
