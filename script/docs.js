@@ -13,11 +13,17 @@ window.onload = () => {
 }
 
 function setActivePage(currentHash){
+    window.scrollTo(0,0)
     const prevActive = document.querySelector(".sidebar-menu-item.active")
     prevActive && prevActive.classList.remove('active')
+    const divs = document.querySelectorAll("main > div")
+    for(let i=0;i<divs.length;i++){
+        divs[i].style.display = "none"
+    }
 
     const currentActive = document.querySelector(`a[href="#${currentHash}"]`)
     currentActive.parentElement.classList.add('active')
+    document.getElementById(currentHash).style.display = "block"
 }
 
 const menuBtn = document.querySelector(".nav-menu-resp")
