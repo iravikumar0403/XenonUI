@@ -8,6 +8,7 @@
 @import url('./alert.css');
 @import url('./button.css');
 @import url('./image.css');
+@import url('./input.css');
 
 html{
     scroll-behavior: smooth;

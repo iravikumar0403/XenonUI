@@ -48,6 +48,7 @@
                 <li class="sidebar-menu-item"><a href="#badge">Badge</a></li>
                 <li class="sidebar-menu-item"><a href="#button">Button</a></li>
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
+                <li class="sidebar-menu-item"><a href="#input">Input</a></li>
             </ul>
         </aside>
         <main>
@@ -371,6 +372,7 @@
                 </pre>
             </div>
 
+            <!-- Image component starts -->
             <div id="image">
                 <h2>Images</h2>
                 <p>Images can be responsive to fit the parent's width, and also can be customised to have rounded corners or as a circle</p>
@@ -407,6 +409,98 @@
                 <pre>
                     <code class="html">
 &lt;img class="img-circle" src="..."/&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Input components start -->
+            <div id="input">
+                <h2>Input and textarea</h2>
+                <p>Inputs are used in forms to collect user related data. Use <span class="doc-classname">input</span> class to input, select or textarea element.</p>
+                <p>Use <span class="doc-classname">invalid</span> to the input elements for invalid input.</p>
+                <p>Use <span class="doc-classname">invalid-feedback</span> for the invalid text feedback.</p>
+                <div class="comps-container">
+                    <div>
+                        <label class="label" for="email-example">Username</label> 
+                        <input class="input" type="text" placeholder="Type something here..."/> 
+                    </div>
+                    <div>
+                        <label class="label" for="email-example">Email</label> 
+                        <input class="input invalid" id="email-example" type="email" placeholder="Input with invalid feedback"/>
+                        <span class="invalid-feedback">Invalid email</span>
+                    </div>
+                    <textarea cols="30" class="input"></textarea>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div&gt;
+&lt;label class="label" for="email-example"&gt;Username&lt;/label&gt; 
+&lt;input class="input" type="text" placeholder="Type something here..."/&gt; 
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;label class="label" for="email-example"&gt;Email&lt;/label&gt; 
+&lt;input class="input invalid" id="email-example" type="email" placeholder="Input with invalid feedback"/&gt;
+&lt;span class="invalid-feedback"&gt;Invalid email&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;textarea cols="30" class="input"&gt;&lt;/textarea&gt;
+                    </code>
+                </pre>
+                <h2>Select</h2>
+                <div class="comps-container">
+                    <select class="input">
+                        <option selected disabled>Select</option>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                    </select>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;select class="input"&gt;
+    &lt;option selected disabled&gt;Select&lt;/option&gt;
+    &lt;option&gt;Item 1&lt;/option&gt;
+    &lt;option&gt;Item 2&lt;/option&gt;
+    &lt;option&gt;Item 3&lt;/option&gt;
+&lt;/select&gt;
+                    </code>
+                </pre>
+
+                <h2>Disabled and Read Only input</h2>
+                <p>Using disabled or readonly attribute gives the disabled styles to the input elements. You need not add any another css class for it.</p>
+                <div class="comps-container">
+                    <div>
+                        <label class="label" for="email-example">Username</label> 
+                        <input disabled class="input" type="text" placeholder="Type something here..."/> 
+                    </div>
+                    <div>
+                        <label class="label">Select</label>
+                        <select disabled class="input">
+                            <option selected disabled>Select</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;div&gt;
+    &lt;label class="label" for="email-example"&gt;Username&lt;/label&gt; 
+    &lt;input disabled class="input" type="text" placeholder="Type something here..."/&gt; 
+&lt;/div&gt;
+
+&lt;div&gt;
+    &lt;label class="label"&gt;Select&lt;/label&gt;
+    &lt;select disabled class="input"&gt;
+        &lt;option selected disabled&gt;Select&lt;/option&gt;
+        &lt;option&gt;Item 1&lt;/option&gt;
+        &lt;option&gt;Item 2&lt;/option&gt;
+        &lt;option&gt;Item 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
                     </code>
                 </pre>
             </div>
