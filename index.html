@@ -47,6 +47,7 @@
                 <li class="sidebar-menu-item"><a href="#alert">Alert</a></li>
                 <li class="sidebar-menu-item"><a href="#badge">Badge</a></li>
                 <li class="sidebar-menu-item"><a href="#button">Button</a></li>
+                <li class="sidebar-menu-item"><a href="#card">Card</a></li>
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
                 <li class="sidebar-menu-item"><a href="#input">Input</a></li>
             </ul>
@@ -370,6 +371,291 @@
 &lt;button disabled class="btn primary icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
                     </code>
                 </pre>
+            </div>
+
+            <!-- Card component start -->
+            <div id="card">
+                <h2>Cards</h2>
+                <p>Card are used to show user related data collectively, like product details, social media posts etc,.</p>
+                <h3>Vertical card</h3>
+                <div class="comps-container">
+                    <div class="card">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;div class="card"&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+            architecto&lt;/p&gt;
+        &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Vertical card with media margin</h3>
+                <div class="comps-container">
+                    <div class="card container">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;div class="card container"&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+            architecto&lt;/p&gt;
+        &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Text only card</h3>
+                <div class="comps-container">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                            Assumenda repellendus accusantium incidunt a nobis,</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</i></button>
+                            <button class="btn primary outlined">Secondary</i></button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+        Assumenda repellendus accusantium incidunt a nobis,&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/i&gt;&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Horizontal card</h3>
+                <div class="comps-container">
+                    <div class="card card-horizontal">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media"/>
+                        </div>
+                        <div>
+                            <div class="card-body">
+                                <h3 class="card-title">Card Title</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores architecto</p>
+                                <small>lorem ipsum dolor sit amet</small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn primary">Primary</button>
+                                <button class="btn primary outlined">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="card card-horizontal"&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media"/&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="card-body"&gt;
+            &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+            &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores architecto&lt;/p&gt;
+            &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;div class="card-footer"&gt;
+            &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with shadow</h3>
+                <div class="comps-container">
+                    <div class="card shadow">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;div class="card shadow"&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+            architecto&lt;/p&gt;
+        &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with badge</h3>
+                <div class="comps-container">
+                    <div class="card container badge-container">
+                        <div class="badge bg-red">Exclusive!</div>
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;div class="card container badge-container"&gt;
+    &lt;div class="badge bg-red"&gt;Exclusive!&lt;/div&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+            architecto&lt;/p&gt;
+        &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with dismiss</h3>
+                <div class="comps-container">
+                    <div class="card dismiss">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                            Assumenda repellendus accusantium incidunt a nobis,</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</i></button>
+                            <button class="btn primary outlined">Secondary</i></button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="card dismiss"&gt;
+    &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+        Assumenda repellendus accusantium incidunt a nobis,&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/i&gt;&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with text overlay</h3>
+                <div class="comps-container">
+                    <div class="card container overlay">
+                        <div class="overlay-text">Overlay Text</div>
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                </div>
+                </div>
             </div>
 
             <!-- Image component starts -->
