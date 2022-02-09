@@ -1,0 +1,98 @@
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    margin: 0.625rem 0;
+    line-height: 1.25;
+    font-weight: 500;
+}
+.h1, h1{
+    font-size: 3rem;
+}
+
+.h2, h2{
+    font-size: 2.5rem;
+}
+.h3, h3, .text-lg{
+    font-size: 2rem;
+}
+.h4, h4{
+    font-size: 1.5rem;
+}
+.h5, h5{
+    font-size: 1rem;
+}
+
+.h6, h6{
+    font-size: 0.8rem;
+}
+p, .p{
+    font-size: 1rem;
+    margin: 0.625rem 0;
+}
+
+/*------------ font weight ------------*/
+
+.fw-bold{
+    font-weight: 500;
+}
+
+.fw-light{
+    font-weight: 300;
+}
+
+/* --------- font size ---------- */
+
+.fs-1{
+    font-size: 1.25rem;
+}
+
+.fs-2{
+    font-size: 1.5rem;
+}
+
+.fs-3{
+    font-size: 1.75rem;
+}
+
+.fs-4{
+    font-size: 2rem;
+}
+
+.fs-5{
+    font-size: 2.5rem;
+}
+
+/* ---------- alignment ---------- */
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* ---font color -------- */
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-success{
+    color: var(--success-color);
+}
+
+.text-secondary{
+    color: var(--secondary-text);
+}
+
+.text-danger{
+    color: var(--danger-color);
+}
+
+.text-warn{
+    color: var(--warn-color);
+}
