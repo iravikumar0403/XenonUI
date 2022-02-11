@@ -50,6 +50,7 @@
                 <li class="sidebar-menu-item"><a href="#card">Card</a></li>
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
                 <li class="sidebar-menu-item"><a href="#input">Input</a></li>
+                <li class="sidebar-menu-item"><a href="#list">List</a></li>
                 <li class="sidebar-menu-item"><a href="#utilities">Utilities</a></li>
             </ul>
         </aside>
@@ -791,7 +792,196 @@
                     </code>
                 </pre>
             </div>
+            <!-- List components -->
 
+            <div id="list">
+                <h2>List</h2>
+                <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
+                <h3>Unordered List with bullets</h3>
+                <div class="comps-container">
+                    <ul class="list ul-disc">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                    <ul class="list ul-square">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                    <ul class="list ul-circle">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;ul class="list ul-disc"&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;li&gt;list item 3&lt;/li&gt;
+    &lt;li&gt;list item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="list ul-square"&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;li&gt;list item 3&lt;/li&gt;
+    &lt;li&gt;list item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="list ul-circle"&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;li&gt;list item 3&lt;/li&gt;
+    &lt;li&gt;list item 4&lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h2>Ordered List with bullets</h2>
+                <div class="comps-container">
+                    <ol class="list ol-number">
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                    </ol>
+                    <ol class="list ol-lower-alpha">
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                    </ol>
+                    <ol class="list ol-upper-alpha">
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                    </ol>
+                    <ol class="list ol-lower-roman">
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                    </ol>
+                    <ol class="list ol-upper-roman">
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                    </ol>
+                    <ol class="list ol-number" reversed>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                    </ol>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;ol class="list ol-number"&gt;
+    &lt;li&gt;Numbered list item&lt;/li&gt;
+    &lt;li&gt;Numbered list item&lt;/li&gt;
+    &lt;li&gt;Numbered list item&lt;/li&gt;
+    &lt;li&gt;Numbered list item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="list ol-lower-alpha"&gt;
+    &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="list ol-upper-alpha"&gt;
+    &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+    &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="list ol-lower-roman"&gt;
+    &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+    &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+    &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+    &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="list ol-upper-roman"&gt;
+    &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+    &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+    &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+    &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="list ol-number" reversed&gt;
+    &lt;li&gt;Reversed list item&lt;/li&gt;
+    &lt;li&gt;Reversed list item&lt;/li&gt;
+    &lt;li&gt;Reversed list item&lt;/li&gt;
+    &lt;li&gt;Reversed list item&lt;/li&gt;
+&lt;/ol>
+                    </code>
+                </pre>
+
+                <h3>List with no bullets</h3>
+                <div class="comps-container">
+                    <ul class="list no-bullets">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+
+                <pre>
+                    <code class="html">
+&lt;ul class="list no-bullets"&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h3>Inline list</h3>
+                <div class="comps-container">
+                    <ul class="list inline">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;ul class="list inline"&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h3>Stacked list</h3>
+                <div class="comps-container">
+                    <ul class="list stacked">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;ul class="list stacked">
+    &lt;li>List item&lt;/li>
+    &lt;li>List item&lt;/li>
+    &lt;li>List item&lt;/li>
+    &lt;li>List item&lt;/li>
+&lt;/ul>
+                    </code>
+                </pre>
+            </div>
             <div id="utilities">
                 <h2>Utilities</h2>
                 <p>Documentation and examples for common text utilities to control alignment, weight, and more.</p>
