@@ -1,14 +1,15 @@
 .btn{
     background: none;
-    border: none;
-    cursor: pointer;
     border-radius: 4px;
-    padding: 0.5rem 1rem;
+    border: none;
     border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
     transition: all 0.3s;
     text-decoration: none;
-    font-size: 1rem;
-    font-family: inherit;
 }
 
 .btn:hover{

@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Xenon UI</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/docs.css">
+    <link rel="stylesheet" href="./script/docs.js">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script defer src="./script/docs.js"></script>
+    <script src="https://kit.fontawesome.com/726548b92d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-section left">
+            <div class="nav-logo">
+                <a href="/index.html"><img loading="lazy" src="../assets/logo_black.png" alt="logo"/></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="fw-bold" href="/">Home</a></li>
+                <li class="nav-menu-item"><a class="fw-bold" href="/">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="nav-section right">
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="fw-bold" href="https://github.com/ravikumar0403/XenonUI/tree/main" target="_blank"><i class="text-lg fab fa-github"></i></a></li>
+                <li class="nav-menu-item"><a class="fw-bold" href="https://twitter.com/ravikumar0403" target="_blank"><i class="text-lg fab fa-twitter"></i></a></li>
+                <li class="nav-menu-item"><a class="fw-bold" href="https://www.linkedin.com/in/ravikumar0403/" target="_blank"><i class="text-lg fab fa-linkedin"></i></a></li>
+            </ul>
+            <div class="nav-menu-resp"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    <div class="page-layout">
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Components</h2>
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item active"><a href="#avatar">Avatar</a></li>
+                <li class="sidebar-menu-item"><a href="#alert">Alert</a></li>
+                <li class="sidebar-menu-item"><a href="#badge">Badge</a></li>
+                <li class="sidebar-menu-item"><a href="#button">Button</a></li>
+                <li class="sidebar-menu-item"><a href="#card">Card</a></li>
+                <li class="sidebar-menu-item"><a href="#image">Image</a></li>
+                <li class="sidebar-menu-item"><a href="#input">Input</a></li>
+                <li class="sidebar-menu-item"><a href="#list">List</a></li>
+                <li class="sidebar-menu-item"><a href="#utilities">Utilities</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div id="avatar">
+                <h2>Avatar</h2>
+                <p>The Avatar component is used to represent user, and displays the profile picture, initials or icon.</p>
+                <h3>Image Avatar</h3>
+                <p>The <span class="text-primary">.avatar</span> class gives you the default avatar component.</p>
+                <div class="comps-container">
+                    <img class="avatar avatar-xl" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                    <img class="avatar avatar-lg" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                    <img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                    <img class="avatar avatar-sm" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                    <img class="avatar avatar-xs" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                </div>
+                <pre>
+                    <code class="language-html">
+                        &lt;img class="avatar avatar-xl" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                        &lt;img class="avatar avatar-lg" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                        &lt;img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                        &lt;img class="avatar avatar-sm" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                        &lt;img class="avatar avatar-xs" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                    </code>
+                </pre>
+
+                <h3>Text Avatar</h3>
+                <p>Use <span class="text-primary">.avatar</span> with a div tag with text for a text avatar.</p>
+                <div class="comps-container">
+                    <div class="avatar avatar-xl">AB</div>
+                    <div class="avatar avatar-lg">AB</div>
+                    <div class="avatar">AB</div>
+                    <div class="avatar avatar-sm">AB</div>
+                    <div class="avatar avatar-xs">AB</div>
+                </div>
+
+                <pre>
+                    <code class="langauge-html">
+                        &lt;div class="avatar avatar-xl">AB&lt;/div&gt;
+                        &lt;div class="avatar avatar-lg"&gt;AB&lt;/div&gt;
+                        &lt;div class="avatar"&gt;AB&lt;/div&gt;
+                        &lt;div class="avatar avatar-sm"&gt;AB&lt;/div&gt;
+                        &lt;div class="avatar avatar-xs"&gt;AB&lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Square Avatar</h3>
+                <p>Use <span class="text-primary">.avatar-sq</span> modifier class to get a sqaure avatar.</p>
+                <div class="comps-container">
+                    <div class="avatar avatar-sq">AB</div>
+                    <img class="avatar avatar-sq" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                </div>
+                <pre>
+                    <code class="language-html">
+                        &lt;div class="avatar avatar-sq">AB&lt;/div&gt;
+                        &lt;img class="avatar avatar-sq" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Alert Component start -->
+
+            <div id="alert">
+                <h2>Alert</h2>
+                <p>Alert can be used to provide contextual feedback messages for typical user actions. Use <span class="text-primary">.alert</span> to import the base styles of alert. Combine with modifier classname to get the desired alert type.</span></p>
+                <h3>Primary Alert</h3>
+                <p>Use <span class="text-primary">.primary</span> for the primary alert. The alert class can be combined with <span class="text-primary">.outlined</span> to get a outlined variant of alert.</p>
+                <div class="comps-container column p-5">
+                    <div class="alert primary">A simple primary alert—check it out!</div>
+                    <div class="alert primary outlined">A outlined primary alert—check it out!</div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="alert primary"&gt;A simple primary alert—check it out!&lt;/div&gt;
+                        &lt;div class="alert primary outlined"&gt;A outlined primary alert—check it out!&lt;/div&gt;                        
+                    </code>
+                </pre>
+
+                <h3>Success Alert</h3>
+                <p>Use <span class="text-primary">.success</span> for the success alert.</p>
+                <div class="comps-container column p-5">
+                    <div class="alert success">A simple success alert—check it out!</div>
+                    <div class="alert success outlined">A outlined success alert—check it out!</div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="alert success"&gt;A simple success alert—check it out!&lt;/div&gt;
+                        &lt;div class="alert success outlined"&gt;A outlined success alert—check it out!&lt;/div&gt;                        
+                    </code>
+                </pre>
+
+                
+                <h3>Danger Alert</h3>
+                <p>Use <span class="text-primary">.danger</span> for the danger alert.</p>
+                <div class="comps-container column p-5">
+                    <div class="alert danger">A simple danger alert—check it out!</div>
+                    <div class="alert danger outlined">A outlined danger alert—check it out!</div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="alert danger"&gt;A simple danger alert—check it out!&lt;/div&gt;
+                        &lt;div class="alert danger outlined"&gt;A outlined danger alert—check it out!&lt;/div&gt;                        
+                    </code>
+                </pre>
+                
+                <h3>Warning Alert</h3>
+                <p>Use <span class="text-primary">.warn</span> for the warning alert.</p>
+                <div class="comps-container column p-5">
+                    <div class="alert warn">A simple warning alert—check it out!</div>
+                    <div class="alert warn outlined">A outlined warning alert—check it out!</div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="alert warn"&gt;A simple warning alert—check it out!&lt;/div&gt;
+                        &lt;div class="alert warn outlined"&gt;A outlined warning alert—check it out!&lt;/div&gt;                        
+                    </code>
+                </pre>
+
+                                
+                <h3>Alert with icon</h3>
+                <p>You can also add icons to the alert.</p>
+                <div class="comps-container column p-5">
+                    <div class="alert primary icon"><i class="fas fa-info-circle"></i>A primary alert with icon—check it out!</div>
+                    <div class="alert danger icon"><i class="fas fa-exclamation-circle"></i>A danger alert with icon—check it out!</div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="alert primary icon"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;A primary alert with icon—check it out!&lt;/div&gt;
+                        &lt;div class="alert danger icon"&gt;&lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;A danger alert with icon—check it out!&lt;/div&gt;                   
+                    </code>
+                </pre>
+
+            </div>
+
+            <!-- Badge Component starts -->
+
+            <div id="badge">
+                <h2>Badge</h2>
+                <p>Badges are being used to display a notification count or status information. Color badge can be used to show the status of user. The number badge can be used to show the cart or notification count.</p>
+                <h3>Profile Badge</h3>
+                <div class="comps-container">
+                    <div class="badge-container">
+                        <img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                        <div class="badge bottom right bg-red"></div>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" />
+                        <div class="badge bottom right bg-green"></div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bottom right bg-yellow"></div>
+                    </div>
+                </div>
+                
+                <pre>
+                    <code class="language-html">
+                        &lt;div class="badge-container"&gt;
+                            &lt;img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                            &lt;div class="badge bottom right bg-red"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="badge-container"&gt;
+                            &lt;img class="avatar" src="https://i.pravatar.cc/200" alt="avatar-img" /&gt;
+                            &lt;div class="badge bottom right bg-green"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="badge-container"&gt;
+                            &lt;div class="avatar"&gt;AB&lt;/div&gt;
+                            &lt;div class="badge bottom right bg-yellow"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+
+                <h3>Number Badge</h3>
+                <div class="comps-container">
+                    <div class="badge-container">
+                        <img class="avatar" src="./assets/cart.svg" alt="avatar-img" />
+                        <div class="badge bg-red top right">9+</div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bg-green bottom left">55</div>
+                    </div>
+                    <div class="badge-container">
+                        <div class="avatar">AB</div>
+                        <div class="badge bg-yellow bottom right">55</div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+                        &lt;div class="badge-container"&gt;
+                            &lt;img class="avatar" src="./assets/cart.svg" alt="avatar-img" /&gt;
+                            &lt;div class="badge bg-red top right"&gt;9+&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="badge-container"&gt;
+                            &lt;div class="avatar"&gt;AB&lt;/div&gt;
+                            &lt;div class="badge bg-green bottom left"&gt;55&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="badge-container"&gt;
+                            &lt;div class="avatar"&gt;AB&lt;/div&gt;
+                            &lt;div class="badge bg-yellow bottom right"&gt;55&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Button component start -->
+
+            <div id="button">
+                <h2>Button</h2>
+                <p>A button is a fundamental UI element that will heavily affect your interaction design. Buttons have the power to compel users to convert, to carry out an action. We have range of buttons and their states. You may use a tag or button element, you need to add respective classes, and you are good to go.</p>
+                <p><span class="text-primary">.btn</span> class provides the default style of a button. Use the other classes along with the <span class="text-primary">.btn</span> to get the desired button style</p>
+
+                <h3>Primary button</h3>
+                <div class="comps-container p-5">
+                    <button class="btn primary">Primary Button</button>
+                    <button class="btn primary outlined">Primary Outlined Button</button>
+                    <button class="btn primary">GitHub <i class="fab fa-github"></i></i></button>
+                    <button class="btn primary outlined"><i class="fas fa-search"></i></button>
+                    <button class="btn primary icon-only"><i class="fas fa-search"></i></button>
+                    <a href="#" class="btn primary">Primary link</a>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;button class="btn primary"&gt;Primary Button&lt;/button&gt;
+                        &lt;button class="btn primary outlined"&gt;Primary Outlined Button&lt;/button&gt;
+                        &lt;button class="btn primary"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn primary outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn primary icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;a href="#" class="btn primary"&gt;Primary link&lt;/a&gt;
+                    </code>
+                </pre>
+
+                <h3>Success button</h2>
+                <div class="comps-container p-5">
+                    <button class="btn success">Success Button</button>
+                    <button class="btn success outlined">Success Outlined Button</button>
+                    <button class="btn success">GitHub <i class="fab fa-github"></i></i></button>
+                    <button class="btn success outlined"><i class="fas fa-search"></i></button>
+                    <button class="btn success icon-only"><i class="fas fa-search"></i></button>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;button class="btn success"&gt;Success Button&lt;/button&gt;
+                        &lt;button class="btn success outlined"&gt;Success Outlined Button&lt;/button&gt;
+                        &lt;button class="btn success"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn success outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn success icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                    </code>
+                </pre>
+                
+                <h3>Danger Button</h3>
+                <div class="comps-container p-5">
+                    <button class="btn danger">Danger Button</button>
+                    <button class="btn danger outlined">Danger Outlined Button</button>
+                    <button class="btn danger">GitHub <i class="fab fa-github"></i></i></button>
+                    <button class="btn danger outlined"><i class="fas fa-search"></i></button>
+                    <button class="btn danger icon-only"><i class="fas fa-search"></i></button>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;button class="btn danger"&gt;Danger Button&lt;/button&gt;
+                        &lt;button class="btn danger outlined"&gt;Danger Outlined Button&lt;/button&gt;
+                        &lt;button class="btn danger"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn danger outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn danger icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                    </code>
+                </pre>
+
+                <h3>Warn button</h3>
+                <div class="comps-container p-5">
+                    <button class="btn warn">Warning Button</button>
+                    <button class="btn warn outlined">Warning Outlined Button</button>
+                    <button class="btn warn">GitHub <i class="fab fa-github"></i></i></button>
+                    <button class="btn warn outlined"><i class="fas fa-search"></i></button>
+                    <button class="btn warn icon-only"><i class="fas fa-search"></i></button>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;button class="btn warn"&gt;Warning Button&lt;/button&gt;
+                        &lt;button class="btn warn outlined"&gt;Warning Outlined Button&lt;/button&gt;
+                        &lt;button class="btn warn"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn warn outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button class="btn warn icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                    </code>
+                </pre>
+
+                <h3>Floating Action Button</h3>
+                <div class="comps-container p-5">
+                    <button class="btn fab primary"><i class="fas fa-search"></i></button>
+                    <a href="#" class="btn fab primary"><i class="fas fa-arrow-up"></i></a>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;button class="btn fab bottom-right primary"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;a href="#" class="btn fab bottom-left primary"&gt;&lt;i class="fas fa-arrow-up"&gt;&lt;/i&gt;&lt;/a&gt;
+                    </code>
+                </pre>
+
+                <h3>Disabled button</h3>
+                <div class="comps-container p-5">
+                    <button disabled class="btn primary">Primary Disabled Button</button>
+                    <button disabled class="btn primary outlined">Primary Disabled Outlined Button</button>
+                    <button disabled class="btn primary">GitHub <i class="fab fa-github"></i></i></button>
+                    <button disabled class="btn primary outlined"><i class="fas fa-search"></i></button>
+                    <button disabled class="btn primary icon-only"><i class="fas fa-search"></i></button>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;button disabled class="btn primary"&gt;Primary Disabled Button&lt;/button&gt;
+                        &lt;button disabled class="btn primary outlined"&gt;Primary Disabled Outlined Button&lt;/button&gt;
+                        &lt;button disabled class="btn primary"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button disabled class="btn primary outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;button disabled class="btn primary icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Card component start -->
+            <div id="card">
+                <h2>Cards</h2>
+                <p>Card are used to show user related data collectively, like product details, social media posts etc,.</p>
+                <h3>Vertical card</h3>
+                <div class="comps-container">
+                    <div class="card">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="card"&gt;
+                            &lt;div class="card-media"&gt;
+                                &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                    architecto&lt;/p&gt;
+                                &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Vertical card with media margin</h3>
+                <div class="comps-container">
+                    <div class="card container">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="card container"&gt;
+                            &lt;div class="card-media"&gt;
+                                &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                    architecto&lt;/p&gt;
+                                &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Text only card</h3>
+                <div class="comps-container">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                            Assumenda repellendus accusantium incidunt a nobis,</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</i></button>
+                            <button class="btn primary outlined">Secondary</i></button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;div class="card"&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                                Assumenda repellendus accusantium incidunt a nobis,&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/i&gt;&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/i&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Horizontal card</h3>
+                <div class="comps-container">
+                    <div class="card card-horizontal">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media"/>
+                        </div>
+                        <div>
+                            <div class="card-body">
+                                <h3 class="card-title">Card Title</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores architecto</p>
+                                <small>lorem ipsum dolor sit amet</small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn primary">Primary</button>
+                                <button class="btn primary outlined">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;div class="card card-horizontal"&gt;
+                            &lt;div class="card-media"&gt;
+                                &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media"/&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                &lt;div class="card-body"&gt;
+                                    &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                    &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores architecto&lt;/p&gt;
+                                    &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+                                &lt;/div&gt;
+                                &lt;div class="card-footer"&gt;
+                                    &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+                                    &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with shadow</h3>
+                <div class="comps-container">
+                    <div class="card shadow">
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="card shadow"&gt;
+                            &lt;div class="card-media"&gt;
+                                &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                    architecto&lt;/p&gt;
+                                &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with badge</h3>
+                <div class="comps-container">
+                    <div class="card container badge-container">
+                        <div class="badge bg-red">Exclusive!</div>
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="card container badge-container"&gt;
+                            &lt;div class="badge bg-red"&gt;Exclusive!&lt;/div&gt;
+                            &lt;div class="card-media"&gt;
+                                &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                    architecto&lt;/p&gt;
+                                &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with dismiss</h3>
+                <div class="comps-container">
+                    <div class="card dismiss">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                            Assumenda repellendus accusantium incidunt a nobis,</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</i></button>
+                            <button class="btn primary outlined">Secondary</i></button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;div class="card dismiss"&gt;
+                            &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+                                &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
+                                Assumenda repellendus accusantium incidunt a nobis,&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                &lt;button class="btn primary"&gt;Primary&lt;/i&gt;&lt;/button&gt;
+                                &lt;button class="btn primary outlined"&gt;Secondary&lt;/i&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <h3>Card with text overlay</h3>
+                <div class="comps-container">
+                    <div class="card container overlay">
+                        <div class="overlay-text">Overlay Text</div>
+                        <div class="card-media">
+                            <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Image component starts -->
+            <div id="image">
+                <h2>Images</h2>
+                <p>Images can be responsive to fit the parent's width, and also can be customised to have rounded corners or as a circle</p>
+                <h3>Responsive Image</h3>
+                <p>You can add class <span class="text-primary">img-responsive</span> to make your image fit the width of container. It's height will get adjusted by keeping the aspect ratio same.</p>
+                <div class="comps-container">
+                    <img class="img-responsive" src="https://picsum.photos/800/400"/>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;img class="img-responsive" src="..."/&gt;
+                    </code>
+                </pre>
+
+                <h3>Rounded Edges</h3>
+                <p>You can add class <span class="text-primary">img-rounded</span> to give your image rounded edges.</p>
+                <div class="comps-container">
+                    <img class="img-rounded" src="https://picsum.photos/400/200"/>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;img class="img-rounded" src="..."/&gt;
+                    </code>
+                </pre>
+                
+                <h3>Circle Image</h3>
+                <p>You can add class <span class="text-primary">img-circle</span> to make your image circle shape.</p>
+                <div class="comps-container">
+                    <img class="img-circle" src="https://picsum.photos/400"/>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;img class="img-circle" src="..."/&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Input components start -->
+            <div id="input">
+                <h2>Input and textarea</h2>
+                <p>Inputs are used in forms to collect user related data. Use <span class="text-primary">input</span> class to input, select or textarea element.</p>
+                <p>Use <span class="text-primary">invalid</span> to the input elements for invalid input.</p>
+                <p>Use <span class="text-primary">invalid-feedback</span> for the invalid text feedback.</p>
+                <div class="comps-container">
+                    <div>
+                        <label class="label" for="email-example">Username</label> 
+                        <input class="input" type="text" placeholder="Type something here..."/> 
+                    </div>
+                    <div>
+                        <label class="label" for="email-example">Email</label> 
+                        <input class="input invalid" id="email-example" type="email" placeholder="Input with invalid feedback"/>
+                        <span class="invalid-feedback">Invalid email</span>
+                    </div>
+                    <textarea cols="30" class="input"></textarea>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;div&gt;
+                        &lt;label class="label" for="email-example"&gt;Username&lt;/label&gt; 
+                        &lt;input class="input" type="text" placeholder="Type something here..."/&gt; 
+                        &lt;/div&gt;
+
+                        &lt;div&gt;
+                        &lt;label class="label" for="email-example"&gt;Email&lt;/label&gt; 
+                        &lt;input class="input invalid" id="email-example" type="email" placeholder="Input with invalid feedback"/&gt;
+                        &lt;span class="invalid-feedback"&gt;Invalid email&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;textarea cols="30" class="input"&gt;&lt;/textarea&gt;
+                    </code>
+                </pre>
+                <h2>Select</h2>
+                <div class="comps-container">
+                    <select class="input">
+                        <option selected disabled>Select</option>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                    </select>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;select class="input"&gt;
+                            &lt;option selected disabled&gt;Select&lt;/option&gt;
+                            &lt;option&gt;Item 1&lt;/option&gt;
+                            &lt;option&gt;Item 2&lt;/option&gt;
+                            &lt;option&gt;Item 3&lt;/option&gt;
+                        &lt;/select&gt;
+                    </code>
+                </pre>
+
+                <h2>Disabled and Read Only input</h2>
+                <p>Using disabled or readonly attribute gives the disabled styles to the input elements. You need not add any another css class for it.</p>
+                <div class="comps-container">
+                    <div>
+                        <label class="label" for="email-example">Username</label> 
+                        <input disabled class="input" type="text" placeholder="Type something here..."/> 
+                    </div>
+                    <div>
+                        <label class="label">Select</label>
+                        <select disabled class="input">
+                            <option selected disabled>Select</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div&gt;
+                            &lt;label class="label" for="email-example"&gt;Username&lt;/label&gt; 
+                            &lt;input disabled class="input" type="text" placeholder="Type something here..."/&gt; 
+                        &lt;/div&gt;
+
+                        &lt;div&gt;
+                            &lt;label class="label"&gt;Select&lt;/label&gt;
+                            &lt;select disabled class="input"&gt;
+                                &lt;option selected disabled&gt;Select&lt;/option&gt;
+                                &lt;option&gt;Item 1&lt;/option&gt;
+                                &lt;option&gt;Item 2&lt;/option&gt;
+                                &lt;option&gt;Item 3&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+            <!-- List components -->
+
+            <div id="list">
+                <h2>List</h2>
+                <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
+                <h3>Unordered List with bullets</h3>
+                <div class="comps-container">
+                    <ul class="list ul-disc">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                    <ul class="list ul-square">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                    <ul class="list ul-circle">
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                        <li>list item 4</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;ul class="list ul-disc"&gt;
+                            &lt;li&gt;list item 1&lt;/li&gt;
+                            &lt;li&gt;list item 2&lt;/li&gt;
+                            &lt;li&gt;list item 3&lt;/li&gt;
+                            &lt;li&gt;list item 4&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ul class="list ul-square"&gt;
+                            &lt;li&gt;list item 1&lt;/li&gt;
+                            &lt;li&gt;list item 2&lt;/li&gt;
+                            &lt;li&gt;list item 3&lt;/li&gt;
+                            &lt;li&gt;list item 4&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ul class="list ul-circle"&gt;
+                            &lt;li&gt;list item 1&lt;/li&gt;
+                            &lt;li&gt;list item 2&lt;/li&gt;
+                            &lt;li&gt;list item 3&lt;/li&gt;
+                            &lt;li&gt;list item 4&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h2>Ordered List with bullets</h2>
+                <div class="comps-container">
+                    <ol class="list ol-number">
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                        <li>Numbered list item</li>
+                    </ol>
+                    <ol class="list ol-lower-alpha">
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                        <li>List item with lowercase alphabets</li>
+                    </ol>
+                    <ol class="list ol-upper-alpha">
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                        <li>List item with uppercase alphabets</li>
+                    </ol>
+                    <ol class="list ol-lower-roman">
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                        <li>List item with lowercase roman</li>
+                    </ol>
+                    <ol class="list ol-upper-roman">
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                        <li>List item with uppercase roman</li>
+                    </ol>
+                    <ol class="list ol-number" reversed>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                        <li>Reversed list item</li>
+                    </ol>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;ol class="list ol-number"&gt;
+                            &lt;li&gt;Numbered list item&lt;/li&gt;
+                            &lt;li&gt;Numbered list item&lt;/li&gt;
+                            &lt;li&gt;Numbered list item&lt;/li&gt;
+                            &lt;li&gt;Numbered list item&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ol class="list ol-lower-alpha"&gt;
+                            &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase alphabets&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ol class="list ol-upper-alpha"&gt;
+                            &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase alphabets&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ol class="list ol-lower-roman"&gt;
+                            &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with lowercase roman&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ol class="list ol-upper-roman"&gt;
+                            &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+                            &lt;li&gt;List item with uppercase roman&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ol class="list ol-number" reversed&gt;
+                            &lt;li&gt;Reversed list item&lt;/li&gt;
+                            &lt;li&gt;Reversed list item&lt;/li&gt;
+                            &lt;li&gt;Reversed list item&lt;/li&gt;
+                            &lt;li&gt;Reversed list item&lt;/li&gt;
+                        &lt;/ol>
+                    </code>
+                </pre>
+
+                <h3>List with no bullets</h3>
+                <div class="comps-container">
+                    <ul class="list no-bullets">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;ul class="list no-bullets"&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h3>Inline list</h3>
+                <div class="comps-container">
+                    <ul class="list inline">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;ul class="list inline"&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+
+                <h3>Stacked list</h3>
+                <div class="comps-container">
+                    <ul class="list stacked">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+                <pre>
+                    <code class="html">
+                        &lt;ul class="list stacked"&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                            &lt;li&gt;List item&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </div>
+            <div id="utilities">
+                <h2>Utilities</h2>
+                <p>Documentation and examples for common text utilities to control alignment, weight, and more.</p>
+                <h3>Heading</h3>
+                <p>All HTML headings, <span class="text-primary">&lt;h1&gt;</span> through <span class="text-primary">&lt;h6&gt;</span>, are available.</p>
+                    <h1>h1. Heading</h1>
+                    <h2>h2. Heading</h2>
+                    <h3>h3. Heading</h3>
+                    <h4>h4. Heading</h4>
+                    <h5>h5. Heading</h5>
+                    <h6>h6. Heading</h6>
+            <pre>
+                <code class="html">
+                    &lt;h1&gt;h1. Heading&lt;/h1&gt;
+                    &lt;h2&gt;h2. Heading&lt;/h2&gt;
+                    &lt;h3&gt;h3. Heading&lt;/h3&gt;
+                    &lt;h4&gt;h4. Heading&lt;/h4&gt;
+                    &lt;h5&gt;h5. Heading&lt;/h5&gt;
+                    &lt;h6&gt;h6. Heading&lt;/h6&gt;
+                </code>
+            </pre>
+
+            <h3>Font sizes</h3>
+                <p class="fs-5">Lorem ipsum dolor.</p>
+                <p class="fs-4">Lorem ipsum dolor.</p>
+                <p class="fs-3">Lorem ipsum dolor.</p>
+                <p class="fs-2">Lorem ipsum dolor.</p>
+                <p class="fs-1">Lorem ipsum dolor.</p>
+            <pre>
+                <code class="html">
+                &lt;p class="fs-5"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                &lt;p class="fs-4"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                &lt;p class="fs-3"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                &lt;p class="fs-2"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                &lt;p class="fs-1"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                </code>
+            </pre>
+
+            <h3>Alignment</h3>
+            <p class="text-left">Lorem ipsum dolor.</p>
+            <p class="text-center">Lorem ipsum dolor.</p>
+            <p class="text-right">Lorem ipsum dolor.</p>
+            
+            <pre>
+                <code class="html">
+                    &lt;p class="text-left"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-center"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-right"&gt;Lorem ipsum dolor.&lt;/p&gt;    
+                </code>
+            </pre>
+
+            <h3>Font colors</h3>
+            <p class="text-primary">Lorem ipsum dolor.</p>
+            <p class="text-secondary">Lorem ipsum dolor.</p>
+            <p class="text-success">Lorem ipsum dolor.</p>
+            <p class="text-danger">Lorem ipsum dolor.</p>
+            <p class="text-warn">Lorem ipsum dolor.</p>
+
+            <pre>
+                <code class="html">
+                    &lt;p class="text-primary"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-secondary"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-success"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-danger"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                    &lt;p class="text-warn"&gt;Lorem ipsum dolor.&lt;/p&gt;
+                </code>
+            </pre>
+            </div>
+        </main>
+    </div>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

@@ -85,6 +85,11 @@ main{
     margin: auto;
 }
 
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
 .grid{
     display: grid;
     align-items: center;
@@ -92,6 +97,15 @@ main{
 
 .col-2{
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.footer{
+    box-shadow: -4px 0 4px var(--divider-color);    
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,5 +143,9 @@ main{
   
       .page-layout{
           grid-template-columns: 1fr;
+      }
+
+      .col-2{
+        grid-template-columns: 1fr;
       }
     }
