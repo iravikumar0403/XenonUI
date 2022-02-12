@@ -735,7 +735,33 @@
 &lt;textarea cols="30" class="input"&gt;&lt;/textarea&gt;
                     </code>
                 </pre>
-                <h2>Select</h2>
+
+                <h3>Input with icon</h3>
+                <p>Wrap the <span class="text-primary">.icon-only</span> button along with input tag inside <span class="text-primary">.input-icon</span> class to get a input component with icon button.</p>
+                <div class="comps-container">
+                    <div class="input-icon">
+                        <button class="btn icon-only"><i class="fa fa-search"></i></button>
+                        <input class="input" type="text" placeholder="Type something here..."/>
+                    </div>
+                    <div class="input-icon">
+                        <input class="input" type="text" placeholder="Type something here..."/>
+                        <button class="btn icon-only"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="html">
+                        &lt;div class="input-icon"&gt;
+                            &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                            &lt;input class="input" type="text" placeholder="Type something here..."/&gt;
+                        &lt;/div&gt;
+                        &lt;div class="input-icon"&gt;
+                            &lt;input class="input" type="text" placeholder="Type something here..."/&gt;
+                            &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>Select</h3>
                 <div class="comps-container">
                     <select class="input">
                         <option selected disabled>Select</option>
@@ -755,7 +781,7 @@
                     </code>
                 </pre>
 
-                <h2>Disabled and Read Only input</h2>
+                <h3>Disabled and Read Only input</h3>
                 <p>Using disabled or readonly attribute gives the disabled styles to the input elements. You need not add any another css class for it.</p>
                 <div class="comps-container">
                     <div>

@@ -32,3 +32,13 @@
     outline: none;
     border-color: var(--primary-color);
 }
+
+.input-icon{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid var(--divider-color);
+}
+
+.input-icon > input { 
+    border: none;
+}
