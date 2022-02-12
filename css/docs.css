@@ -80,8 +80,18 @@ main{
     padding: 2rem;
 }
 
-.text-primary{
-    color: var(--primary-color)
+.container-lg{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.col-2{
+    grid-template-columns: repeat(2, 1fr);
 }
 
 @media only screen and (max-width: 768px) {
