@@ -1,7 +1,7 @@
 nav{
     display: flex;
     padding: 1rem;
-    box-shadow: 4px 0px 4px var(--divider-color);
+    box-shadow: 0 0 4px var(--divider-color);
     min-height: 10vh;
     width: 100%;
 }
