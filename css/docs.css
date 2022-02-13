@@ -52,7 +52,7 @@
     padding: 1rem;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px var(--divider-color);
-    background-color: var(--bg-secondary);
+    background-color: var(--white);
 }
 
 .align-start{
@@ -115,7 +115,7 @@ main{
         height: 0;
         overflow: hidden;
         transition: all ease 0.5s;
-        background-color: var(--bg-secondary);
+        background-color: var(--white);
       }
   
       .sidebar.show{
