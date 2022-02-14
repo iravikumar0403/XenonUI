@@ -21,6 +21,10 @@
     max-width: 45rem;
 }
 
+.card-horizontal .card-media{
+    max-width: 30%;
+}
+
 .card.container .card-media{
     padding: 0.5rem 0.5rem 0 0.5rem;
 }
