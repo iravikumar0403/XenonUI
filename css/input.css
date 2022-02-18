@@ -4,7 +4,9 @@
     font-family: inherit;
     border: 1px solid var(--divider-color);
     border-radius: 4px;
-    display: block
+    display: block;
+    background: transparent;
+    color: inherit;
 }
 
 .input.range{
@@ -25,7 +27,7 @@
 }
 
 .input:read-only, .input:disabled{
-    background-color: var(--bg-color);
+    background-color: var(--background-primary);
 }
 
 .input:focus{

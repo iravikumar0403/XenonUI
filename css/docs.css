@@ -35,7 +35,7 @@
 }
 
 .sidebar-menu-item.active{
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
 }
 
 .sidebar-menu-item:hover:not(.active) a{
@@ -52,7 +52,7 @@
     padding: 1rem;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px var(--divider-color);
-    background-color: var(--white);
+    background-color: var(--background-secondary);
 }
 
 .align-start{
@@ -115,7 +115,7 @@ main{
         height: 0;
         overflow: hidden;
         transition: all ease 0.5s;
-        background-color: var(--white);
+        background-color: var(--background-secondary);
     }
 
     .sidebar.show{

@@ -9,7 +9,7 @@
 }
 
 .avatar:not(img){
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
 }
 
 .avatar-xs{

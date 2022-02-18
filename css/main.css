@@ -21,10 +21,6 @@ html{
 
 body{
     font-family: 'Ubuntu', sans-serif;
-    background-color: var(--bg-color);
-    color : var(--complementary-text);
-}
-
-p{
-    color: var(--primary-text);
+    background-color: var(--background-primary);
+    color : var(--primary-text);
 }
