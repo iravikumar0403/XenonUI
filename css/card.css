@@ -70,7 +70,7 @@
     position: relative;
 }
 
-.card .overlay-text{
+.card .overlay{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,4 +81,9 @@
     z-index: 9;
     background-color: var(--background-primary);
     opacity: 80%;
+    transition: all 0.5s;
+}
+
+.card.overlay.onhover:not(:hover) > .overlay{
+    display: none;
 }

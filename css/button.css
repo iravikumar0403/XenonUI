@@ -82,3 +82,15 @@
 .btn:not(.icon-only){
     color: inherit;
 }
+
+.link {
+    border-bottom: 1px solid var(--primary-text);
+}
+
+.link.primary{
+    border-color: var(--primary-color);
+}
+
+.link.primary:hover{
+    color: var(--primary-color);
+}
