@@ -77,10 +77,10 @@ window.addEventListener("hashchange", (e) => {
   setActivePage(currentHash);
 });
 
-if (sessionStorage.getItem("xTheme") === "light") {
-  setTheme(lightTheme);
-  themeBtn.classList.add("fa-moon")
-  themeBtn.classList.remove("fa-sun")
+if (sessionStorage.getItem("xTheme") === "dark") {
+  setTheme(darkTheme);
+  themeBtn.classList.add("fa-sun")
+  themeBtn.classList.remove("fa-moon")
 }
 
 if (window.location.pathname === "/docs.html") {
