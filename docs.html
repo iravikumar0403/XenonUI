@@ -51,6 +51,7 @@
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
                 <li class="sidebar-menu-item"><a href="#input">Input</a></li>
                 <li class="sidebar-menu-item"><a href="#list">List</a></li>
+                <li class="sidebar-menu-item"><a href="#modal">Modal</a></li>
                 <li class="sidebar-menu-item"><a href="#navigation">Navigation</a></li>
                 <li class="sidebar-menu-item"><a href="#utilities">Utilities</a></li>
             </ul>
@@ -1081,6 +1082,100 @@
                 </pre>
             </div>
 
+            <!-- Modal -->
+            <div id="modal">
+                <h2>Modal</h2>
+                <p>Xenon UI has two variants of Modal. You can copy the html code given below to use the modal in your projects. Make sure you have included the script given in the installation section.</p>
+                <p>The <span class="text-primary">centered</span> class on modal-dialog aligns the modal to the center of the page.</p>
+                <h4>Handling the interactivity</h4>
+                <p>Opening the modals are handled by adding data attribute to that button which will be responsible for opening the modal. The value of <i>data-xe-target</i> attribute should be the <i>id</i> of the modal. </p>
+                <p>The button should also have <i>data-xe-toggle</i> attribute with "modal" as it's value to attach the click event for opening the modal.</p>
+                <div class="comps-container">
+                    <button data-xe-toggle="modal" data-xe-target="exampleModal" class="btn primary">Launch demo modal</button>
+                    <button data-xe-toggle="modal" data-xe-target="centeredModal" class="btn primary">Launch centered modal</button>
+                </div>
+                <div class="modal" id="exampleModal">
+                    <div class="modal-dialog">
+                        <div class="modal-header">
+                            <h3> Modal Title</h3>
+                            <button class="btn primary icon-only modal-close"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Modal body</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="centeredModal">
+                    <div class="modal-dialog centered">
+                        <div class="modal-header">
+                            <h3> Modal Title</h3>
+                            <button class="btn primary icon-only modal-close"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Modal body</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                                architecto</p>
+                            <small>lorem ipsum dolor sit amet</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn primary">Primary</button>
+                            <button class="btn primary outlined">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="modal" id="exampleModal"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-header"&gt;
+            &lt;h3&gt; Modal Title&lt;/h3&gt;
+            &lt;button class="btn primary icon-only modal-close"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+            &lt;h4&gt;Modal body&lt;/h4&gt;
+            &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                architecto&lt;/p&gt;
+            &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+            &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <pre>
+                <code class="html">
+&lt;!-- Centered Modal --&gt;
+&lt;div class="modal" id="centeredModal"&gt;
+    &lt;div class="modal-dialog centered"&gt;
+        &lt;div class="modal-header"&gt;
+            &lt;h3&gt; Modal Title&lt;/h3&gt;
+            &lt;button class="btn primary icon-only modal-close"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+            &lt;h4&gt;Modal body&lt;/h4&gt;
+            &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                architecto&lt;/p&gt;
+            &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+            &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
             <!-- Navigation -->
             <div id="navigation">
                 <h2>Navigation bar</h2>
@@ -1266,5 +1361,6 @@
     <script>
         hljs.highlightAll();
     </script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
