@@ -1,0 +1,8 @@
+.rating{
+    color: var(--warn-color);
+    font-size: 1.2rem;
+}
+
+.rating > i:hover{
+    transform: scale(1.2);
+}

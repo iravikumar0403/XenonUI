@@ -13,6 +13,8 @@
 @import url('./image.css');
 @import url('./input.css');
 @import url('./list.css');
+@import url('./modal.css');
+@import url('./rating.css');
 
 html{
     scroll-behavior: smooth;
