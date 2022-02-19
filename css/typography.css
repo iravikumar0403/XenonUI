@@ -96,3 +96,7 @@ p, .p{
 .text-warn{
     color: var(--warn-color);
 }
+
+.text-light{
+    color: var(--text-light);
+}
