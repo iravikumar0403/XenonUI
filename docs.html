@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <title>Xenon UI</title>
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/docs.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./script/theme.js"></script>
     <link
         rel="stylesheet"
@@ -34,8 +34,8 @@
                 <li class="nav-menu-item"><a class="fw-bold" href="https://github.com/ravikumar0403/XenonUI/tree/main" target="_blank"><i class="fs-1 fab fa-github"></i></a></li>
                 <li class="nav-menu-item"><a class="fw-bold" href="https://twitter.com/ravikumar0403" target="_blank"><i class="fs-1 fab fa-twitter"></i></a></li>
                 <li class="nav-menu-item"><a class="fw-bold" href="https://www.linkedin.com/in/ravikumar0403/" target="_blank"><i class="fs-1 fab fa-linkedin"></i></a></li>
-                <li class="nav-menu-item mx-1"><a class="fw-bold"><i class="fs-1 theme-icon fa-solid fa-sun"></i></a></li>
             </ul>
+            <li class="nav-menu-item mx-1 my-2"><a class="fw-bold"><i class="fs-1 theme-icon fa-solid fa-sun"></i></a></li>
             <div class="nav-menu-resp"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
@@ -277,7 +277,6 @@
                     <button class="btn primary">GitHub <i class="fab fa-github"></i></i></button>
                     <button class="btn primary outlined"><i class="fas fa-search"></i></button>
                     <button class="btn primary icon-only"><i class="fas fa-search"></i></button>
-                    <a href="#" class="btn primary">Primary link</a>
                 </div>
                 <pre>
                     <code class="html">
@@ -286,7 +285,6 @@
 &lt;button class="btn primary"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class="btn primary outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class="btn primary icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;a href="#" class="btn primary"&gt;Primary link&lt;/a&gt;
                     </code>
                 </pre>
 
@@ -341,6 +339,18 @@
 &lt;button class="btn warn"&gt;GitHub &lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class="btn warn outlined"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class="btn warn icon-only"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                    </code>
+                </pre>
+
+                <h3>Links</h3>
+                <div class="comps-container p-5">
+                    <a href="#" class="link primary">Primary link</a>
+                    <a href="#" class="link">Secondary Link</a>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;a href="#" class="link primary">Primary link&lt;/a&gt;
+&lt;a href="#" class="link"&gt;Secondary Link&lt;/a&gt;
                     </code>
                 </pre>
 
@@ -611,7 +621,7 @@
                 <h3>Card with dismiss</h3>
                 <div class="comps-container">
                     <div class="card dismiss">
-                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        <button class="btn icon-only primary"><i class="fa fa-times"></i></button>
                         <div class="card-body">
                             <h3 class="card-title">Card Title</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint illo perspiciatis, est animi nam totam eaque! Placeat sint cumque modi deleniti expedita quod commodi. Suscipit rem illo a ducimus.
@@ -640,10 +650,10 @@
                     </code>
                 </pre>
 
-                <h3>Card with text overlay</h3>
+                <h3>Card with overlay</h3>
                 <div class="comps-container">
                     <div class="card container overlay">
-                        <div class="overlay-text">Overlay Text</div>
+                        <div class="overlay">Overlay</div>
                         <div class="card-media">
                             <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
                         </div>
@@ -659,7 +669,68 @@
                         </div>
                     </div>
                 </div>
+            <pre>
+                <code class="html">
+&lt;div class="card container overlay"&gt;
+    &lt;div class="overlay"&gt;Overlay&lt;/div&gt;
+    &lt;div class="card-media"&gt;
+        &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+            architecto&lt;/p&gt;
+        &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+
+            
+            <h3>Card with overlay on hover</h3>
+            <div class="comps-container">
+                <div class="card container overlay onhover">
+                    <div class="overlay">Overlay</div>
+                    <div class="card-media">
+                        <img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" />
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+                            architecto</p>
+                        <small>lorem ipsum dolor sit amet</small>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn primary">Primary</button>
+                        <button class="btn primary outlined">Secondary</button>
+                    </div>
+                </div>
             </div>
+        <pre>
+            <code class="html">
+&lt;div class="ard container overlay onhover"&gt;
+&lt;div class="overlay"&gt;Overlay&lt;/div&gt;
+&lt;div class="card-media"&gt;
+    &lt;img class="img-responsive img-rounded" src="https://picsum.photos/200" alt="card media" /&gt;
+&lt;/div&gt;
+&lt;div class="card-body"&gt;
+    &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+    &lt;p class="card-text"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolores
+        architecto&lt;/p&gt;
+    &lt;small&gt;lorem ipsum dolor sit amet&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class="card-footer"&gt;
+    &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+    &lt;button class="btn primary outlined"&gt;Secondary&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+        </div>
 
             <!-- Image component starts -->
             <div id="image">
