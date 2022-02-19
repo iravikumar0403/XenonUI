@@ -3,6 +3,11 @@
 }
 
 /* ======== margin utility ========== */
+
+.m-auto{
+    margin: auto;
+}
+
 .m-0{
     margin: 0;
 }
@@ -29,6 +34,11 @@
 
 .m-6{
     margin: 3rem;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mx-0{
@@ -66,6 +76,11 @@
     margin-left: 3rem;
 }
 
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .my-0{
     margin-top: 0;
     margin-bottom: 0;
@@ -101,6 +116,10 @@
     margin-top: 3rem;
 }
 
+.ml-auto{
+    margin-left: auto;
+}
+
 .ml-0{
     margin-left: 0;
 }
@@ -129,6 +148,9 @@
     margin-left: 3rem;
 }
 
+.mr-auto{
+    margin-right: auto;
+}
 
 .mr-0{
     margin-right: 0;
