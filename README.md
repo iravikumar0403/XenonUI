@@ -27,7 +27,7 @@ Xenon UI is a CSS component library, with fully functional and modular pre-defin
 
 In order to use Xenon UI to your project, Copy the tags given below and paste it in the head tag of your html.
 
-```css
+```html
 <link rel="stylesheet" href="https://xenon-ui.netlify.app/css/main.css">
 ```
 
