@@ -1,19 +1,19 @@
 // Modal interactions
-(()=>{
-    const showModal = event => {
+(() => {
+    const showModal = (event) => {
         const { xeTarget } = event.target.dataset;
         document.getElementById(xeTarget).classList.add("open"); 
         document.getElementsByTagName("body")[0].classList.add("modal-open");
     }
     
     const dismissModal = event => {
-        const { target } = event;
-        if(this.classList.contains("modal-close")){
+        const { currentTarget, target } = event;
+        if(currentTarget.classList.contains("modal-close")){
             const activeModals = document.querySelectorAll(".modal.open");
             activeModals.forEach(modal => modal.classList.remove("open"));
             document.getElementsByTagName("body")[0].classList.remove("modal-open");
-        }else if(target === this){
-            this.classList.remove("open");
+        }else if(target === currentTarget){
+            currentTarget.classList.remove("open");
             document.getElementsByTagName("body")[0].classList.remove("modal-open");
         }
     }
