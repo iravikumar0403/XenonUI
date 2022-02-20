@@ -1,0 +1,35 @@
+.dropdown{
+    position: relative;
+}
+
+.dropdown-toggle::after{
+    content: '▼';
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.dropdown-menu{
+    display: none;
+    padding: 0.5rem;
+    list-style: none;
+    border: 1px solid var(--divider-color);
+    border-radius: 4px;
+    margin: 4px 0;
+    position: absolute;
+    width: max-content;
+    background-color: var(--background-primary);
+}
+
+.dropdown-menu.expanded{
+    display: block;
+}
+
+.dropdown-item{
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: var(--divider-color);
+}

@@ -48,12 +48,15 @@
                 <li class="sidebar-menu-item"><a href="#badge">Badge</a></li>
                 <li class="sidebar-menu-item"><a href="#button">Button</a></li>
                 <li class="sidebar-menu-item"><a href="#card">Card</a></li>
+                <li class="sidebar-menu-item"><a href="#dropdown">Dropdown</a></li>
+                <li class="sidebar-menu-item"><a href="#grid">Grid</a></li>
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
                 <li class="sidebar-menu-item"><a href="#input">Input</a></li>
                 <li class="sidebar-menu-item"><a href="#list">List</a></li>
                 <li class="sidebar-menu-item"><a href="#modal">Modal</a></li>
                 <li class="sidebar-menu-item"><a href="#navigation">Navigation</a></li>
                 <li class="sidebar-menu-item"><a href="#rating">Rating</a></li>
+                <li class="sidebar-menu-item"><a href="#toast">Toast</a></li>
                 <li class="sidebar-menu-item"><a href="#utilities">Utilities</a></li>
             </ul>
         </aside>
@@ -734,6 +737,118 @@
         </pre>
         </div>
 
+            <div id="dropdown">
+                <h2>Dropdown</h2>
+                <p>To use Xenon UI dropdowns, You just need to copy the html code given below and fill in your content. Make sure you have added the script tag mentioned in the installation section to your project.</p>
+                <p>Dropdown interaction are handled using the data attribute. Assign the <i>data-xe-target</i> attribute the id of the dropdown menu to add the interactivity</p>
+                <div class="comps-container">
+                    <div class="dropdown">
+                        <button class="btn primary dropdown-toggle" data-xe-target="example-dropdown">Dropdown</button>
+                        <ul class="dropdown-menu" id="example-dropdown">
+                            <li class="dropdown-item">Dropdow menu item 1</li>
+                            <li class="dropdown-item">Dropdow menu item 2</li>
+                            <li class="dropdown-item">Dropdow menu item 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="dropdown"&gt;
+    &lt;button class="btn primary dropdown-toggle" data-xe-target="example-dropdown"&gt;Dropdown&lt;/button&gt;
+    &lt;ul class="dropdown-menu" id="example-dropdown"&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 1&lt;/li&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 2&lt;/li&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div id="grid">
+                <h2>Simplified Grid</h2>
+                <p>The grid items in these examples are images. You can use any elements according to the use case.</p>
+                <h3>Grid 50-50</h3>
+                <div class="comps-container">
+                    <div class="grid grid-50-50">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="grid grid-50-50"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>Grid 30-70</h3>
+                <div class="comps-container">
+                    <div class="grid grid-30-70">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="grid grid-30-70"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>Grid 20-80</h3>
+                <div class="comps-container">
+                    <div class="grid grid-20-80">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="grid grid-20-80"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>Grid 30-40-30</h3>
+                <div class="comps-container">
+                    <div class="grid grid-30-40-30">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="grid grid-30-40-30"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>Grid 20-60-20</h3>
+                <div class="comps-container">
+                    <div class="grid grid-20-60-20">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                        <img src="https://picsum.photos/720" height="100%" width="100%">
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="grid grid-20-60-20"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+    &lt;img src="https://picsum.photos/720" height="100%" width="100%"&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
             <!-- Image component starts -->
             <div id="image">
                 <h2>Images</h2>
@@ -1306,6 +1421,77 @@
     &lt;i class="fa-regular fa-star"&gt;&lt;/i&gt;
     &lt;i class="fa-regular fa-star"&gt;&lt;/i&gt;
 &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div id="toast">
+                <h2>Toast</h2>
+                <div class="comps-container p-5 column">
+                    <div class="toast success">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="toast error">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only">Retry</button>
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="toast warn">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Toast Demo</h3>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-success-toast">Success toast</button>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-error-toast">Error toast</button>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-warn-toast">Warn toast</button>
+                <div class="toast success" id="example-success-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="toast error" id="example-error-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only">Retry</button>
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="toast warn" id="example-warn-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="toast success" id="example-success-toast"&gt;
+    &lt;p class="toast-message"&gt;This is a toast&lt;/p&gt;
+    &lt;div class="toast-controls"&gt;
+        &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="toast error" id="example-error-toast"&gt;
+    &lt;p class="toast-message"&gt;This is a toast&lt;/p&gt;
+    &lt;div class="toast-controls"&gt;
+        &lt;button class="btn icon-only"&gt;Retry&lt;/button&gt;
+        &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="toast warn" id="example-warn-toast"&gt;
+    &lt;p class="toast-message"&gt;This is a toast&lt;/p&gt;
+    &lt;div class="toast-controls"&gt;
+        &lt;button class="btn icon-only"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;  
                     </code>
                 </pre>
             </div>
