@@ -1,3 +1,4 @@
+// Modal interactions
 (()=>{
     const showModal = event => {
         const { xeTarget } = event.target.dataset;
@@ -26,6 +27,8 @@
     modalCloseBtns.forEach(modal => modal.addEventListener('click', dismissModal));
 })();
 
+
+// toast interactions
 (()=>{
     const showToast = event => {
         const { xeTarget } = event.target.dataset;
@@ -38,4 +41,15 @@
 
     const toastToggle = document.querySelectorAll("button[data-xe-toggle='toast']");
     toastToggle.forEach(element => element.addEventListener('click', showToast));
+})();
+
+
+// dropdown interactions
+(()=>{
+    const toggleDropdown = event => {
+        const { xeTarget } = event.target.dataset;
+        document.getElementById(xeTarget).classList.toggle("expanded")
+    }
+    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+    dropdownToggles.forEach(element => element.addEventListener('click', toggleDropdown))
 })();

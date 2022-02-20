@@ -48,6 +48,7 @@
                 <li class="sidebar-menu-item"><a href="#badge">Badge</a></li>
                 <li class="sidebar-menu-item"><a href="#button">Button</a></li>
                 <li class="sidebar-menu-item"><a href="#card">Card</a></li>
+                <li class="sidebar-menu-item"><a href="#dropdown">Dropdown</a></li>
                 <li class="sidebar-menu-item"><a href="#image">Image</a></li>
                 <li class="sidebar-menu-item"><a href="#input">Input</a></li>
                 <li class="sidebar-menu-item"><a href="#list">List</a></li>
@@ -735,6 +736,33 @@
         </pre>
         </div>
 
+            <div id="dropdown">
+                <h2>Dropdown</h2>
+                <p>To use Xenon UI dropdowns, You just need to copy the html code given below and fill in your content. Make sure you have added the script tag mentioned in the installation section to your project.</p>
+                <p>Dropdown interaction are handled using the data attribute. Assign the <i>data-xe-target</i> attribute the id of the dropdown menu to add the interactivity</p>
+                <div class="comps-container">
+                    <div class="dropdown">
+                        <button class="btn primary dropdown-toggle" data-xe-target="example-dropdown">Dropdown</button>
+                        <ul class="dropdown-menu" id="example-dropdown">
+                            <li class="dropdown-item">Dropdow menu item 1</li>
+                            <li class="dropdown-item">Dropdow menu item 2</li>
+                            <li class="dropdown-item">Dropdow menu item 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <pre>
+                    <code class="html">
+&lt;div class="dropdown"&gt;
+    &lt;button class="btn primary dropdown-toggle" data-xe-target="example-dropdown"&gt;Dropdown&lt;/button&gt;
+    &lt;ul class="dropdown-menu" id="example-dropdown"&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 1&lt;/li&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 2&lt;/li&gt;
+        &lt;li class="dropdown-item"&gt;Dropdow menu item 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
             <!-- Image component starts -->
             <div id="image">
                 <h2>Images</h2>
@@ -1334,7 +1362,7 @@
                         </div>
                     </div>
                 </div>
-                <h3>Taoast Demo</h3>
+                <h3>Toast Demo</h3>
                 <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-success-toast">Success toast</button>
                 <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-error-toast">Error toast</button>
                 <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-warn-toast">Warn toast</button>

@@ -16,6 +16,7 @@
 @import url('./modal.css');
 @import url('./rating.css');
 @import url('./toast.css');
+@import url('./dropdown.css');
 
 html{
     scroll-behavior: smooth;
