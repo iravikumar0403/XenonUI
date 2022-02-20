@@ -50,6 +50,6 @@
         const { xeTarget } = event.target.dataset;
         document.getElementById(xeTarget).classList.toggle("expanded")
     }
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+    const dropdownToggles = document.querySelectorAll("[data-xe-toggle='dropdown']");
     dropdownToggles.forEach(element => element.addEventListener('click', toggleDropdown))
 })();
