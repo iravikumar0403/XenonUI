@@ -54,6 +54,7 @@
                 <li class="sidebar-menu-item"><a href="#modal">Modal</a></li>
                 <li class="sidebar-menu-item"><a href="#navigation">Navigation</a></li>
                 <li class="sidebar-menu-item"><a href="#rating">Rating</a></li>
+                <li class="sidebar-menu-item"><a href="#toast">Toast</a></li>
                 <li class="sidebar-menu-item"><a href="#utilities">Utilities</a></li>
             </ul>
         </aside>
@@ -1308,6 +1309,54 @@
 &lt;/div&gt;
                     </code>
                 </pre>
+            </div>
+
+            <div id="toast">
+                <h2>Toast</h2>
+                <div class="comps-container p-5 column">
+                    <div class="toast success">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="toast error">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only">Retry</button>
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="toast warn">
+                        <p class="toast-message">This is a toast</p>
+                        <div class="toast-controls">
+                            <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <h3>Taoast Demo</h3>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-success-toast">Success toast</button>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-error-toast">Error toast</button>
+                <button class="btn primary" data-xe-toggle="toast" data-xe-target="example-warn-toast">Warn toast</button>
+                <div class="toast success" id="example-success-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="toast error" id="example-error-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only">Retry</button>
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="toast warn" id="example-warn-toast">
+                    <p class="toast-message">This is a toast</p>
+                    <div class="toast-controls">
+                        <button class="btn icon-only"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
             </div>
 
             <div id="utilities">

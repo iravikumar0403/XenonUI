@@ -104,6 +104,11 @@ main{
     justify-content: center;
 }
 
+.comps-container > .toast{
+    display: flex;
+    position: static;
+}
+
 .footer{
     box-shadow: -4px 0 4px var(--divider-color);    
 }

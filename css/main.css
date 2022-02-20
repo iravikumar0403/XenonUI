@@ -15,6 +15,7 @@
 @import url('./list.css');
 @import url('./modal.css');
 @import url('./rating.css');
+@import url('./toast.css');
 
 html{
     scroll-behavior: smooth;
