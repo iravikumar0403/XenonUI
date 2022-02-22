@@ -24,12 +24,12 @@ const darkTheme = {
 
 const toggleTheme = () => {
   if (themeBtn.classList.contains("fa-moon")) {
-    sessionStorage.setItem("xTheme", "dark");
+    localStorage.setItem("xTheme", "dark");
     themeBtn.classList.add("fa-sun")
     themeBtn.classList.remove("fa-moon")
     setTheme(darkTheme);
   } else {
-    sessionStorage.setItem("xTheme", "light");
+    localStorage.setItem("xTheme", "light");
     themeBtn.classList.remove("fa-sun")
     themeBtn.classList.add("fa-moon")
     setTheme(lightTheme);
@@ -77,7 +77,7 @@ window.addEventListener("hashchange", (e) => {
   setActivePage(currentHash);
 });
 
-if (sessionStorage.getItem("xTheme") === "dark") {
+if (localStorage.getItem("xTheme") === "dark") {
   setTheme(darkTheme);
   themeBtn.classList.add("fa-sun")
   themeBtn.classList.remove("fa-moon")
